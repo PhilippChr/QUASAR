@@ -23,7 +23,7 @@ If you use this code, please cite:
   title={RAG-based Question Answering over Heterogeneous Data and Text},
   author={Christmann, Philipp and Weikum, Gerhard},
   journal={IEEE Data Engineering Bulletin},
-  year={2025}
+  year={2024}
 }
 ```
 
