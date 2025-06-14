@@ -1,0 +1,51 @@
+# meta data
+*__pycache__
+quasar.egg-info/
+.DS_Store
+.idea
+.vscode
+
+# data folders
+_data/
+_intermediate_representations/
+_benchmarks/
+_*
+
+# specific folders
+*results/
+*logs/
+*cache/
+*examples/
+*out/
+*runs/
+*tmp/
+*ablations/
+
+# data files
+*.pickle
+*.out
+*.json
+*.jsonl
+*.csv
+*.res
+
+# specific paths
+clocq/
+CLOCQ/
+backup/
+test.py
+INTERNAL_*
+convquestions/
+timequestions/
+tiq/
+send_telegram_message.py
+explaignn_*.yml
+reign_explaignn_3refs
+results_*/
+analysis
+merged/
+iterative_improvement.*
+
+# other repos
+quasar/heterogeneous_answering/fid_module/FiD/
+quasar/question_understanding/question_resolution/quretec/
