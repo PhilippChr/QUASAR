@@ -19,7 +19,7 @@ RAG-based Question Answering over Heterogeneous Data and Text
 
 If you use this code, please cite:
 ```bibtex
-@article{christmann2025rag,
+@article{christmann2024rag,
   title={RAG-based Question Answering over Heterogeneous Data and Text},
   author={Christmann, Philipp and Weikum, Gerhard},
   journal={IEEE Data Engineering Bulletin},
