@@ -23,25 +23,25 @@ class QuasarAnsweringModule(HeterogeneousAnswering):
         sources_string = "_".join(sources)
         
         # train reranker
-        # self.reranking_module.train(sources=sources)
+        self.reranking_module.train(sources=sources)
 
         # reranker inference on train
-        # input_path = os.path.join(
-        #     input_dir, qu, ers, sources_string, f"train_ers-{method_name}.jsonl"
-        # )
-        # output_path = os.path.join(
-        #     input_dir, qu, ers, sources_string, f"train_rerank-{method_name}.jsonl"
-        # )
-        # self.reranking_module.inference_on_data_split(input_path, output_path, sources)
+        input_path = os.path.join(
+            input_dir, qu, ers, sources_string, f"train_ers-{method_name}.jsonl"
+        )
+        output_path = os.path.join(
+            input_dir, qu, ers, sources_string, f"train_rerank-{method_name}.jsonl"
+        )
+        self.reranking_module.inference_on_data_split(input_path, output_path, sources)
 
         # reranker inference on dev
-        # input_path = os.path.join(
-        #     input_dir, qu, ers, sources_string, f"dev_ers-{method_name}.jsonl"
-        # )
-        # output_path = os.path.join(
-        #     input_dir, qu, ers, sources_string, f"dev_rerank-{method_name}.jsonl"
-        # )
-        # self.reranking_module.inference_on_data_split(input_path, output_path, sources)
+        input_path = os.path.join(
+            input_dir, qu, ers, sources_string, f"dev_ers-{method_name}.jsonl"
+        )
+        output_path = os.path.join(
+            input_dir, qu, ers, sources_string, f"dev_rerank-{method_name}.jsonl"
+        )
+        self.reranking_module.inference_on_data_split(input_path, output_path, sources)
 
         # train generation
         self.generation_module.train(sources=sources)
